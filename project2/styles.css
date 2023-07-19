@@ -5,8 +5,348 @@ body{
     margin: 0px;
     padding: 0px;
 }
+/*==================
+    utility class
+===================*/
+.flex{
+    display: flex;
+}
+.space{
+    margin-inline: 10%;
+}
+
+/*==================
+    main section
+===================*/
 .main{
     width: 100%;
-    background-image: url(./assets/background.png);
+    height: 100vh;
+    background-image: url("./assets/background.png");
     background-size: cover;
+}
+.navbar{
+    flex-direction:row ;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+    padding-block: 35px;
+}
+.navigation{
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.brand{
+    margin-right: 10rem;
+    font-size: 30px;
+    font-weight: bold;
+}
+.navigationitem{
+    justify-content: space-around;
+    align-items: center;
+    gap: 13%;
+    
+}
+.navigationitem>a{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+}
+.navigationitem1{
+    text-decoration: none;
+    color: aliceblue;
+    font-weight: bold;
+    background-color: #4fa9d0;
+    padding: 10px 25px;
+}
+.navigationitem1:hover{
+    background-color: orangered;
+}
+.itag{
+    font-size: 10px;
+    padding-inline: 10px;
+}
+.itag1{
+    display: none;
+}
+
+.mainsection{
+    flex-direction: row;
+    justify-content: space-between;
+    color: #fff;
+    padding-top: 3rem;
+    flex-wrap: wrap;
+    
+}
+.about{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+.hospital{
+    font-size: 60px;
+    font-weight: bold;
+
+}
+.ptag{
+    font-size: large;
+}
+.learmore{
+    flex-direction: row;
+    
+    gap: 30px;
+}
+.learmore>span{
+    background-color: #4fa9d0;
+    padding: 15px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.learmore>span:hover{
+    background-color: #ff4500;
+
+}
+.appointment{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    background-color: #fff;
+    color: #000;
+    padding: 2rem 2.5rem;
+    border-radius: 1rem;
+    
+}
+.appointment>h3{
+    font-size: 25px;
+    font-weight: bold;
+}
+.appointment>div>input{
+   width: 13rem;
+   height: 2.5rem;
+   margin-block: 0.5rem;
+   border-radius: 0.5rem;
+}
+.appointment>div>select{
+    width: 13rem;
+    height: 2.5rem;
+   margin-block: 0.5rem;
+ }
+
+.appointment>div>input::placeholder{
+    padding-left: 0.3rem;
+    font-weight: bold;
+}
+.book1{
+    padding-inline: 2.6rem;
+    border-radius: 1rem;
+    margin-block: 1rem;
+}
+
+/*==================
+   Second section
+===================*/
+
+.secondsection{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 4rem;
+   
+}
+.landing{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block: 20px;
+}
+.landing>h1{
+    font-size: 40px;
+}
+/* .landing>span{
+    width: 23rem;
+} */
+.card{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+   gap: 20px;
+    
+}
+.imgpart{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    gap: 10px;
+    font-size: 20px;
+   border-top-left-radius: 1rem;
+   border-top-right-radius: 1rem;
+    width: 100%;
+    height: 100px;
+    background-color: #3184a5;
+    margin-bottom: 1.5rem;
+
+}
+
+.card1{
+    flex-direction: column;
+    justify-content:start ;
+    align-items: start;
+    border: 1px solid  #3184a5;
+    border-radius: 1rem;
+    height: 20rem;
+    width:20rem ;
+}
+.card1>span{
+    padding-block: 0.5rem;
+    padding-left: 30px;
+    color: #97989a;
+}
+
+.learnm{
+    color: #0b6b91 !important;
+    cursor: pointer;
+}
+.learnm:hover{
+    color: #0a2c3a !important;
+
+}
+.itag2{
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    border-radius: 50%;
+}
+.i{
+   margin-left: 10px;
+   margin-top: 9px;
+}
+/*==================
+   next section
+===================*/
+.itag3{
+    fill: #ffff00;
+}
+.itag4{
+    color: #ffff00;
+}
+.card2nd{
+    background-color: #dfdddd;
+}
+.card2{
+    justify-content: space-around;
+    width: 20rem;
+    height: 15rem;
+    border: 1px solid #fff;
+    background-color: #fff;
+    
+    box-shadow: 3px 3px  #390808 ,-3px -3px #ff0000;
+}
+.card2>*{
+    padding-left: 30px;
+}
+.salte{
+    color: #6a6969;
+    font-size: 15px;
+    width: 15rem;
+}
+/* .card2>img{
+    display: block;
+    width: 100px;
+    height: 100px;
+} */
+
+/*==================
+   next section
+===================*/
+.card3{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 20rem;
+    
+}
+.itag5{
+    color: #3184a5;
+}
+.carditem1{
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+    gap: 15px;
+    
+    padding-bottom: 5rem;
+    
+}
+.dog{
+    font-weight: bold;
+    font-size: 15px;
+}
+.think{
+    font-size: 15px;
+    color: #878484;
+}
+.text{
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 10rem;
+    gap: 0.5rem;
+}
+.cardmain{
+    padding-top: 5rem;
+    gap: 5rem;
+}
+.span1{
+    color: #868686;
+}
+/*==================
+    media quary
+===================*/
+@media screen and (max-width:750px) {
+
+    .space{
+        margin-inline: 2%;
+    }
+    .brand{
+        margin-right: 10rem;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .navbar{
+        flex-direction:column ;
+        justify-content: space-between;
+        gap: 20px;        
+    }
+    
+    .itag1{
+        display: block;
+        transform: scale(1.3);
+    }
+    .navigationitem,.navigationitem1{
+        display: none;
+    }
+
+    .about>span,p{
+        display: none;
+    }
+    .mainsection{
+        padding-top: 1rem;
+        gap: 1rem;
+        justify-content: center;
+    }
+    .span1{
+        width: 22rem;
+    }
+    .carditem1{
+        padding-bottom: 2rem; 
+    }
+    .card3{
+        width: 18rem;
+    }
+    .span1{
+        width: 22rem;
+    }
 }
