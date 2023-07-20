@@ -152,6 +152,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-block: 4rem;
+    width: 100%;
    
 }
 .landing{
@@ -163,9 +164,6 @@ body{
 .landing>h1{
     font-size: 40px;
 }
-/* .landing>span{
-    width: 23rem;
-} */
 .card{
     flex-direction: row;
     justify-content: space-around;
@@ -241,8 +239,11 @@ body{
     height: 15rem;
     border: 1px solid #fff;
     background-color: #fff;
-    
+    transition: all 0.3s ease-in-out;
     box-shadow: 3px 3px  #390808 ,-3px -3px #ff0000;
+}
+.card2:hover{
+    box-shadow:-3px -3px #1b38ba,3px 3px  #09a377;
 }
 .card2>*{
     padding-left: 30px;
@@ -265,7 +266,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    width: 20rem;
+    width: 18rem;
     
 }
 .itag5{
@@ -301,6 +302,197 @@ body{
 }
 .span1{
     color: #868686;
+    font-weight: bold;
+    
+}
+.trybuttom1{
+    margin-top: 3.3rem !important;
+}
+/*==================
+   next section
+===================*/
+.forusection{
+    background-color: #cfcfcf;
+    gap: 10rem;
+
+}
+.repues{
+    font-size: 50px;
+}
+.free{
+    padding-top: 1rem;
+}
+/* .cardfoubuying{
+    padding-block: 4rem;
+} */
+.card4{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height:33rem;
+    background-color: #fff;
+    border: 2px solid #4298e3;
+}
+.dolar{
+    justify-content: center;
+    align-items: center;
+    gap:   0.5rem;
+    padding-block: 1.5rem;
+    color: #43a1ca;
+}
+.benifit{
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+}
+.benifitno{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.monthwise{
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.span2{
+    color: #000 !important;
+    padding-block: 0px !important;
+    margin-block: 0px !important;
+    font-size: 20px !important;
+    padding-left: -10px !important;
+
+}
+.zero{
+    font-size: 30px;
+}
+.checkdiv{
+    color: #ffffff;
+    background-color: #09861e;
+    padding: 5px 7px;
+    border-radius: 50%;
+}
+.trybuttom{
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #228cca;
+    margin-top: 2rem;
+    padding: 15px 65px;
+    border-radius: 0.3rem;
+}
+.trybuttom:hover{
+    background-color: #11569f;
+}
+.nobg{
+    background-color: #a8a5a5;
+}
+.cardfoubuying{
+    gap: 0rem;
+}
+.free1{
+    padding-top: 2.8rem;
+}
+.card5{
+    color: #fff;
+    background-color: #0e0a2f;
+    height: 35rem;
+    margin-top: -2rem;
+}
+.span3{
+    color: #fff !important;
+}
+
+/*==================
+  getintouchsection
+===================*/
+
+.getintouchsection{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    /* width: 100%; */
+    margin-block: 5rem;
+    padding-block: 3rem;
+    background-color: #060335;
+    color: #fff;
+}
+.writtenpart{
+    width: 24rem;
+}
+.SubScrib{
+    align-items: center;
+    border: 1px solid #ffffff;
+    background-color: #fff;
+    /* height: 2.5rem; */
+    
+}
+.SubScrib>input{
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    width: 15rem;
+    padding-left: 0.3rem;
+    
+}
+.SubScrib>div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.7rem 2rem;
+    color: #fff;
+    cursor: pointer;
+    height: 100%;
+    background-color: #3a86b6;
+    transition: all 0.3s ease-in-out;
+}
+.SubScrib>div:hover{
+    background-color: rgb(24, 78, 196);
+}
+/*==================
+   footer section
+===================*/
+.footer{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+   
+}
+.fotteritem{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items:flex-start;
+    gap: 1rem;
+}
+.footeritag{
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
+    color: #236c96;
+   
+}
+.fotteritem>span{
+    color: #767676;
+}
+.footeritag>i:hover{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    transform: scale(1.2);
+    
+}
+.footetritem1>span{
+    cursor: pointer;
+}
+
+.last{
+    justify-content: center;
+    align-items: center;
+    padding-block: 1rem;
+    background-color: #d5b3b3;
+    margin-top: 1rem;
 }
 /*==================
     media quary
@@ -308,7 +500,7 @@ body{
 @media screen and (max-width:750px) {
 
     .space{
-        margin-inline: 2%;
+        margin-inline: 0px;
     }
     .brand{
         margin-right: 10rem;
@@ -343,10 +535,57 @@ body{
     .carditem1{
         padding-bottom: 2rem; 
     }
+    
     .card3{
-        width: 18rem;
+        width: 20rem;
     }
     .span1{
         width: 22rem;
     }
+
+    .cardfoubuying{
+        gap: 2rem;
+    }
+    .card5{
+        margin-top: 0px;
+    }
+    .span1{
+        width: 21rem;
+        margin-left: 40px;
+
+    }
+    /* .forusection{
+        gap: 2rem;
+    } */
+    .getintouchsection{
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .SubScrib>div{
+        padding: 1rem;
+    }
+    .SubScrib>input{
+        width: 14rem;
+    }
+    .writtenpart{
+        width: 19rem;
+    }
+
+    .footer{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .fotteritem{
+        flex-direction: column;
+        justify-content: space-between;
+        align-items:center;
+        gap: 1rem;
+    }
+
 }
