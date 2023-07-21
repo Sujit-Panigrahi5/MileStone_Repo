@@ -3,16 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>project3</title>
     <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class="flex justify-between items-center">
-        <div>
-            
+    <nav class="flex flex-row justify-between items-center py-7 border-b-2">
+        <div class="ml-3 flex justify-between items-center gap-56">
+           <img src="./assets/logo.png" alt="">
+           <div class="block lg:hidden "><i class="fa-solid fa-bars text-3xl"></i></div>
         </div>
-        <div></div>
-        <div></div>
+        <div class="flex justify-between items-center hidden md:block ">
+            <span class="px-6">PRODUCT <i class="fa-solid fa-chevron-down text-sm"></i></span>
+            <span class="px-6">GALLERY</span>
+            <span class="px-6">CONTACT</span>
+        </div>
+        <div class="flex lg:flex-row justify-between items-center gap-2 mr-3  ">
+            <div class="border-2 px-6 py-3 hover:bg-slate-800 hover:text-slate-100 transition all ease-in-out delay-200 rounded-md hidden lg:block">Login</div>
+            <div class="border-2 px-6 py-3 text-slate-100 bg-slate-800 hover:bg-emerald-500 transition all ease-in-out delay-200 rounded-md hidden lg:block">SignUP</div>
+        </div>
     </nav>
+
+    <div class="flex flex-col md:flex-row justify-between items-center gap-2 ">
+        <div class="flex flex-col justify-between items-start ml-5 gap-9">
+            <div class="flex flex-col justify-center items-start gap-3">
+                <span class=" text-4xl md:text-7xl   text-slate-600">LET'S RIDE</span>
+                <span class=" text-4xl md:text-7xl  font-serif font-bold text-slate-800">THE FEATURE.</span>
+            </div>
+            <hr class="border-2 border-slate-600 md:w-96 w-72">
+            <p class="text-2xl text-slate-600 w-72 md:w-96">simple and sleek design with users mind.</p>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4 lg:gap-20">
+                <div class="w-[100%]  " >
+                    
+                    <i class="fa-solid fa-right-long text-slate-200 bg-slate-900 py-5 px-5 mr-36 md:mr-0 "></i>
+                    <span class="text-xl font-bold text-slate-800 cursor-pointer">Buy Now</span>
+                </div>
+                <div class="flex flex-row justify-between items-center gap-4 "> 
+                    <div class=" lg:flex flex-col justify-center items-start  font-bold text-slate-800 lg:w-48">
+                        <span>Watch our</span>
+                        <span>Vedio How</span>
+                        <span>it works</span>
+                    </div>
+                    <img src="./assets/header play button.png" alt="" class="cursor-pointer ">
+                </div>
+            </div>
+        </div>
+        <!-- <div class="w-[50%]  ">
+            <img src="./assets/gallery scooter.png" alt="" class="bg-white w-96 md:w-[100%] relative">
+        </div> -->
+        <img src="./assets/header image.png" alt="" class="bg-white w-[100%] lg:w-[50%] ">
+       
+
+    </div>
+
+    <div class="flex flex-row-reverse justify-start items-center py-5">
+        <div class="border-2 border-slate-600 flex justify-center items-center  mx-3 rounded-3xl">
+            <div class="border-r-2  border-slate-600  ">
+                <i class="fa-solid fa-angle-left  px-6 py-4 "></i>
+            </div>
+            <i class="fa-solid fa-angle-right px-6"></i>
+        </div>
+        <img src="./assets/01.png" alt="">
+    </div>
+
+    <div class="flex flex-row flex-wrap justify-around items-center py-16 gap-2">
+        <div class="flex flex-col justify-center items-center gap-5 bg-slate-50 md:px-7 md:py-6 px-6 py-5 shadow-xl shadow-gray-300 rounded-md">
+            <div class="flex flex-row justify-center items-end">
+                <span class="text-5xl font-bold text-slate-700">105</span>
+                <span class="text-xl font-bold text-slate-700">Lbs</span>
+            </div>
+            <span class="text-sm">Net Weight</span>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 bg-slate-50 md:px-7 md:py-6 px-6 py-5 shadow-xl shadow-gray-300 rounded-md">
+            <div class="flex flex-row justify-center items-end">
+                <span class="text-5xl font-bold text-slate-700">26</span>
+                <span class="text-xl font-bold text-slate-700">mph</span>
+            </div>
+            <span class="text-sm">Top speed</span>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 bg-slate-50 md:px-7 md:py-6 px-6 py-5 shadow-xl shadow-gray-300 rounded-md">
+            <div class="flex flex-row justify-center items-end">
+                <span class="text-5xl font-bold text-slate-700">38 </span>
+                <span class="text-xl font-bold text-slate-700">miles</span>
+            </div>
+            <span class="text-sm">Max range</span>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 bg-slate-50 md:px-7 md:py-6 px-6 py-5 shadow-xl shadow-gray-300 rounded-md">
+            <div class="flex flex-row justify-center items-end">
+                <span class="text-5xl font-bold text-slate-700">89</span>
+                <span class="text-xl font-bold text-slate-700">nm</span>
+            </div>
+            <span class="text-sm">Max torques</span>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 bg-slate-50 md:px-7 md:py-6 px-6 py-5 shadow-xl shadow-gray-300 rounded-md">
+            <div class="flex flex-row justify-center items-end">
+                <span class="text-5xl font-bold text-slate-700">22%</span>
+                <span class="text-xl font-bold text-slate-700">slope</span>
+            </div>
+            <span class="text-sm">Hill Climbing</span>
+        </div>
+        <div class="flex flex-col justify-center items-center gap-5 bg-slate-50 md:px-7 md:py-6 px-6 py-5 shadow-xl shadow-gray-300 rounded-md">
+            <div class="flex flex-row justify-center items-end">
+                <span class="text-5xl font-bold text-slate-700">2x</span>
+              
+            </div>
+            <span class="text-sm">Hydralich Disc Brakes</span>
+        </div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center py-8 ">
+        <h1 class="text-2xl lg:text-5xl font-bold mb-5 text-slate-600">Product Informtion</h1>
+        <p class=" lg:text-xl ml-2 text-slate-600">Our shooter has following unquie design and technology features</p>
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-56">
+            <div class="h-full outline-2 ">
+                <img src="./assets/product information image.png" alt="" class="h-full">
+            </div>
+            <div class="flex flex-col justify-between items-start gap-9 ml-4 lg:ml-0">
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Light weight aircraft grade aluminium frame</span>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Car grade lithium battery</span>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Self-balanced</span>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Plug n play</span>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Quick release adapter</span>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">RFID key card</span>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <img src="./assets/high efficiency motor.png" alt="" class="h-full">
+
+    <div class="flex flex-col justify-center items-center py-8 gap-16">
+        <div class="flex flex-col justify-center items-center ">
+            <h1 class="text-2xl lg:text-5xl font-bold mb-5 text-slate-700">Multipul Acessarys</h1>
+        <p class=" lg:text-xl ml-2 text-slate-600">There are more modes for the scotter for your Multipul needs</p>
+        </div>
+        
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-56">
+            <div class="flex flex-col justify-between items-start gap-9 ml-4 lg:ml-0 pt-3">
+                <h1 class="text-2xl lg:text-5xl font-bold mb-5 text-slate-800 mb-[-1rem]">Golf Bag Rock</h1>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Material: Aluminium alloy</span>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Color : Black</span>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Capacity : 45lbs</span>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Easy : Stady and Adjustable</span>
+                </div>
+                
+            </div>
+            <div class="h-full outline-2 ">
+                <img src="./assets/golf bag rock.png" alt="" class="h-full">
+            </div>
+
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-56">
+
+            <div class="h-full outline-2 ">
+                <img src="./assets/shopping rack.png" alt="" class="h-full">
+            </div>
+
+            <div class="flex flex-col justify-between items-start gap-9 ml-4 lg:ml-0 pt-3">
+                <h1 class="text-2xl lg:text-5xl font-bold mb-5 text-slate-800 mb-[-1rem]">Shopping Rack</h1>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Material: Aluminium alloy</span>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Color : Black</span>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Capacity : 45lbs</span>
+                </div>
+                <div class="flex flex-row justify-center items-center gap-4">
+                    <img src="./assets/Icon.png" alt="">
+                    <span class="text-xl text-slate-800">Easy : Stady and Adjustable</span>
+                </div>
+                
+            </div>
+           
+
+        </div>
+
+        <div class="text-xl lg:text-3xl font-bold mb-5 text-slate-700 border-2 border-slate-900 lg:px-16 lg:py-7 px-5 py-3  rounded-2xl">More Acessarys comming Soon</div>
+    </div>
+
+    <div class="flex flex-col justify-center items-center py-8 gap-16 ">
+        <div class="flex flex-col justify-center items-center ">
+            <h1 class="text-2xl lg:text-5xl font-bold mb-5 text-slate-700">gallery</h1>
+        <p class=" lg:text-xl ml-2 text-slate-600">View gallery of our product and make your self satisfied with our creation</p>
+        </div>
+        
+        <div class="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-24">
+            <div class="lg:mb-[-17rem] relative">
+                <h1 class="text-3xl font-bold text-slate-700 absolute top-4 left-4">Scooter</h1>
+                <img src="./assets/gallery scooter.png" alt="">
+            </div>
+            <div class=" h-full outline-2 relative">
+                <h1 class="text-3xl font-bold text-slate-700 absolute top-4 left-4">Built Qulity</h1>
+                <img src="./assets/gallery built quality.png" alt="" class="h-full">
+            </div>
+
+        </div>
+
+        <div class="flex flex-col lg:flex-row-reverse  justify-center items-center gap-5 lg:gap-72">
+
+            <div class="h-full outline-2 relative">
+                <h1 class="text-3xl font-bold text-slate-700 absolute top-4 left-4">Parts</h1>
+                <img src="./assets/gallery parts.png" alt="" class="h-full">
+            </div>
+
+            <div class="flex flex-col justify-between items-start gap-3 ml-2 lg:ml-0 lg:mb-[-9rem]">
+                <div class="text-xl lg:text-3xl font-bold mb-5 text-slate-700 border-2 border-slate-900 lg:px-[7.5rem] lg:py-7 px-5 py-3  rounded-2xl cursor-pointer">battery Images</div>
+
+                <div class="text-xl lg:text-3xl font-bold mb-5 text-slate-700 border-2 border-slate-900 lg:px-[5.7rem] lg:py-7 px-5 py-3  rounded-2xl cursor-pointer">Spare Parts Images</div>
+
+                <div class="text-xl lg:text-3xl font-bold mb-5 text-slate-700 border-2 border-slate-900 lg:px-16 lg:py-7 px-5 py-3  rounded-2xl cursor-pointer">Charging Cable Images</div>
+                
+            </div>
+           
+
+        </div>
+
+       
+    </div>
+
+    <div class="flex flex-col justify-center items-center py-8 gap-16 lg:w-[100%]">
+        <div class="flex flex-col justify-center items-center ">
+            <h1 class="text-2xl lg:text-5xl font-bold mb-5 text-slate-700">gallery</h1>
+        <p class=" lg:text-xl ml-2 text-slate-600">View gallery of our product and make your self satisfied with our creation</p>
+        </div>
+        
+        <!-- <div class="flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-24">
+           
+        </div> -->
+        <div class=" lg:w-[100%] bg-gradient-to-tr from-red-50 to-slate-50">
+            <img src="./assets/gallery scooter.png" alt="" class="w-[100%] lg:transform lg:scale-75">
+        </div>
+
+        <div class="flex flex-col lg:flex-row flex-wrap justify-center lg:justify-around items-center py-16 mt-[-12rem] lg:m-[-29rem]">
+            <div class="relative m-[-1rem] lg:transform scale-90 lg:scale-100">
+                <h1 class=" text-7xl font-bold text-slate-200 opacity-60 absolute right-20 bottom-[6.3rem] ">01</h1>
+                <img src="./assets/color-scooter-1.png" alt="">
+            </div>
+            <div class="relative  m-[-1rem] lg:transform scale-90 lg:scale-100">
+                <h1 class=" text-7xl font-bold text-slate-200 opacity-60 absolute right-20 bottom-[6.3rem] ">02</h1>
+                <img src="./assets/color-scooter-2.png" alt="">
+            </div>
+            <div class="relative m-[-1rem] lg:transform scale-90 lg:scale-100">
+                <h1 class=" text-7xl font-bold text-slate-200 opacity-60 absolute right-20 bottom-[6.3rem] ">03</h1>
+                <img src="./assets/color-scooter-3.png" alt="">
+            </div>
+            <div class="relative m-[-1rem] lg:transform scale-90 lg:scale-100">
+                <h1 class=" text-7xl font-bold text-slate-200 opacity-60 absolute right-20 bottom-[6.3rem] ">04</h1>
+                <img src="./assets/color-scooter-4.png" alt="">
+            </div>
+        </div>
+        
+
+        </div>
+
+       
+    </div>
+
 </body>
 </html>
