@@ -216,6 +216,7 @@ body{
     height: 40px;
     background-color: #fff;
     border-radius: 50%;
+    fill: rgb(61, 61, 194);
 }
 .i{
    margin-left: 10px;
